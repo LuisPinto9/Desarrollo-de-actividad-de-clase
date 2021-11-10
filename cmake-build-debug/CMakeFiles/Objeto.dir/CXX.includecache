@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/Card.h
+string
+-
+ostream
+-
+
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/LinkedList.cpp
+LinkedList.h
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/LinkedList.h
+string
+-
+
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/LinkedList.h
+vector
+-
+string
+-
+Node.h
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/Node.h
+
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/Node.h
+cstdlib
+-
+
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/main.cpp
+iostream
+-
+Card.h
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/Card.h
+Node.h
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/Node.h
+LinkedList.cpp
+C:/Users/XS/Desktop/Estudios/Universidad/Semestre 4/Programacion III/Programas/C++/Objeto/LinkedList.cpp
+
