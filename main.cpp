@@ -72,7 +72,7 @@ int main() {
 
             cout << endl;
 
-        } else if (opcion == 3){
+        } else if (opcion == 3) {
 
             string id;
             string desc;
@@ -101,45 +101,45 @@ int main() {
 
             cout << endl;
 
-        }else if (opcion == 4){
+        } else if (opcion == 4) {
 
             string id;
 
-            cout<<"Escriba el id del nodo"<<endl;
+            cout << "Escriba el id del nodo" << endl;
 
-            cin>> id;
+            cin >> id;
 
-            if (maze->findNode(id)){
+            if (maze->findNode(id)) {
 
-                cout<<"El nodo existe";
-            } else{
+                cout << "El nodo existe";
+            } else {
 
-                cout<<"El nodo no existe";
+                cout << "El nodo no existe";
             }
 
-            cout<<endl;
+            cout << endl;
 
-        } else if (opcion == 5){
+        } else if (opcion == 5) {
 
             string id;
 
-            cout<<"Escriba el id de la carta"<<endl;
+            cout << "Escriba el id de la carta" << endl;
 
-            cin>> id;
+            cin >> id;
 
-            if (maze->findNode(id)){
+            if (maze->findNode(id)) {
 
                 Card *card = maze->findInfo(id);
 
-                cout<< *card<<endl;
-            } else{
+                cout << *card << endl;
+            } else {
 
-                cout<<"La carta que busca no existe en el mazo"<<endl;
+                cout << "La carta que busca no existe en el mazo" << endl;
             }
 
-            cout<<endl;
+            cout << endl;
 
-        }else if (opcion == 6){
+        } else if (opcion == 6) {
 
             string id;
             string desc;
@@ -164,7 +164,29 @@ int main() {
 
             Card c(id, desc, value, figure, color);
 
-            maze->addNodeFirst(c);
+            int opc;
+
+            cout
+                    << "Como quiere ponerlo en la lista?\n1. Antes de un nodo determinado\n2. Despues de un nodo determinado"
+                    << endl;
+            cin >> opc;
+
+            if (opc == 1) {
+
+                string id;
+                cout << "Escriba el id del nodo al que quiere poner antes la carta" << endl;
+                cin >> id;
+
+                maze->addNodeBeforeTo(maze->findNode(id), c);
+
+            } else if (opc == 2) {
+
+                string id;
+                cout << "Escriba el id del nodo al que quiere poner despues la carta" << endl;
+                cin >> id;
+
+                maze->addNodeAfterTo(maze->findNode(id), c);
+            }
 
             cout << endl;
 
